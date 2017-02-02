@@ -30,7 +30,7 @@ body{
   text-decoration: none;
 }
 
-#nav a:link #nav a:visited {
+#nav a:link, #nav a:visited {
   display: block;
   color: #ffffff;
   background-color: #98bf21;
@@ -54,6 +54,12 @@ body{
   text-align: right;
 }
 
+#footer {
+  color: black;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 0.8em;
+  border-top: 1px solid black;
+}
 
 img{
   border: none;
