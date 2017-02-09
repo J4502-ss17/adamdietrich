@@ -1,19 +1,32 @@
+html{
+  font-size: 100%
+}
+
 body{
   background-color: #d4c390;
 }
 
 p{
   color: #000000;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Merriweather', Georgia, "Times New Roman", sans-serif;
   text-align: center;
   font-weight: 300;
-
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 h1 {
-    font-family: Georgia, "Times New Roman", serif;
-    text-align: center;
+  font-family: 'Merriweather Sans', Helvetica, Arial, sans-serif;
+  text-align: center;
 }
+
+h2{
+  font-family: 'Merriweather', Georgia, "Times New Roman", sans-serif;
+  text-align: center;
+  font-style: bold;
+  font size: 1rem;
+}
+
 
 #container{
   width: 90%;
@@ -51,5 +64,8 @@ h1 {
 
 img{
   border: none;
+}
 
+.italic{
+  font-style: italic;
 }
