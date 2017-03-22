@@ -110,6 +110,12 @@ img {
 Full screen background example specific styles
 ============================================*/
 
+.cover{
+  
+}
+
+
+
 @media screen and (min-width: 600px) {
 
     #container {
