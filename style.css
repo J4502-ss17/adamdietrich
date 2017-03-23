@@ -28,43 +28,118 @@ h2{
 
 
 #container{
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
 }
 
-#nav{
-  padding: 0;
-  list-style-type: none;
-
-}
-
-#nav li{
-  margin: 0;
-  padding: 0;
-  border-bottom: 2px solid #ccc;
-  text-decoration: none;
-}
-
-#nav a:link, #nav a:visited {
-  display: block;
-  color: #ffffff;
-  background-color: #90a1d4;
-  font-weight: bold;
-  text-decoration: none;
-  text-align: center;
-  padding:4px;
-  font-family: Helvetica, Arial, sans-serif;
-}
-
-#nav a:hover, #nav a:active{
-  background-color: #7a991a;
-}
-
-
-img{
-  border: none;
-}
 
 .italic{
   font-style: italic;
 }
+
+/* flex box style below */
+
+
+.navigation{
+	list-style: none;
+	margin: 0;
+	background: gray;
+    padding: 0;
+    display: flex;
+	flex-flow: column;
+}
+
+.navigation a {
+	text-decoration: none;
+	display: block;
+	color: white;
+    text-align:center;
+    padding: 10px;
+    border-bottom:1px solid black;
+}
+
+.navigation li:last-of-type a{
+  border-bottom: none;
+}
+
+img{
+  border: none;
+  width: 80%;
+  float: left;
+}
+
+
+
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+header, article, aside, footer {
+  flex: 1 100%;
+  padding: 10px;
+}
+
+
+@media (min-width:800px) {
+
+    .navigation {
+        flex-flow: row wrap;
+        justify-content: flex-end;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+    .navigation a:hover {
+    	background: black;
+    }
+
+    aside {
+        flex: 1 auto;
+    }
+
+    article {
+		flex: 3 0px;
+	}
+
+    .aside-1 {
+        order: 1;
+    }
+
+    article {
+        order: 2;
+    }
+
+    .aside-2 {
+      order: 3;
+    }
+
+    footer {
+        order: 4;
+    }
+
+    article {
+        display: flex;
+        flex-flow: row wrap;
+        flex-wrap: wrap;
+    }
+
+
+
+
+        .image {
+            width: 45%;
+            object-fit: 10px;
+        }
+
+        .story {
+            width: 45%;
+        }
+
+        .first {
+            margin-top: 0;
+        }
+    }

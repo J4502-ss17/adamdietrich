@@ -7,33 +7,53 @@
 	<title>	My First Website for J4502 </title>
 	<meta http-equiv="content-type"
 		content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,400i,700|Merriweather:400,400i,700" rel="stylesheet"/>
-    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" href="style.css"/>
 
 </head>
 
 <body>
 <!--This is a comment. It won't show up in your browser, only in the page source-->
 <div id="container">
-
-  <h1>My First Website J4502 </h1>
-  <h2>  Adam Dietrich </h2>
-  <p> addf3f@mail.missouri.edu    Twitter: @adamdietrich93</p>
-  <p> Why did the programmer quit his job?    <span class="italic"> Because he didn't get arrays. </span> </p>
-
-  <ul id="nav">
+<nav>
+  <ul class="navigation">
     <li><a href="http://www.apple.com">A link to Apples website</a></li>
     <li><a href="http://www.google.com">A link to Google's website</a></li>
     <li><a href="http://www.nytimes.com">A link to the new york times</a></li>
     <li><a href="index2.html">A link to my second page</a></li>
   </ul>
+</nav>
+  <div class="wrapper">
+<header>
+  <h1>My First Website J4502 </h1>
+</header>
 
-  <p> I wanted to show you all <a href="http://www.apple.com">a link to Apples website</a> because they make really awesome phones.</p>
+<article>
+    <div class="image">
+      <a href="mailto:addf3f@mail.missouri.edu">
+      <img src="head.jpg" alt="A super happy guy" title="The Happy guy" width="300"/>
+      </a>
+    </div>
+    <div class="story">
+  <h2 class="first">  Adam Dietrich </h2>
+  <p>  addf3f@mail.missouri.edu</p>
+  <p> Twitter: @adamdietrich93</p>
+    </div>
+</article>
 
-  <a href="mailto:addf3f@mail.missouri.edu">
-  <img src="head.jpg" alt="A super happy guy" title="The Happy guy" width="300"/>
-  </a>
+<aside class="aside-1">
+  <p> Why did the programmer quit his job?</P>
+  <p><span class="italic"> Because he didn't get arrays. </span> </p>
+</aside>
 
+
+
+<footer>
+  <p class="footer"> Adam Dietrich 2017 </p>
+</footer>
+
+</div>
 </div>
 </body>
 
