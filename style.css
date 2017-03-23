@@ -133,7 +133,7 @@ header, article, aside, footer {
 
         .image {
             width: 45%;
-            object-fit: 10px;
+            object-fit: contain;
         }
 
         .story {
