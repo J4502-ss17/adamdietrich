@@ -144,3 +144,28 @@ header, article, aside, footer {
             margin-top: 0;
         }
     }
+
+
+
+    @media screen and (min-width: 480px) {
+    	p{
+    		width: 95%;
+    		margin: 1em auto;
+    	}
+    }
+
+    @media screen and (min-width: 800px) {
+    	p{
+    		width: 80%;
+    		margin: 1.5em auto;
+    	}
+    }
+
+    @media screen and (min-width: 1000px) {
+    	p{
+    		width: 80%;
+    		max-width: 60em;
+    		margin: 1.5em auto;
+    	}
+
+    }
