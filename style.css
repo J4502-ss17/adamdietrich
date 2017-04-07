@@ -79,7 +79,7 @@ img{
 
 header, article, aside, footer {
   flex: 1 100%;
-  padding: 10px;
+  padding: 5px;
 }
 
 
@@ -107,11 +107,11 @@ header, article, aside, footer {
 	}
 
     .aside-1 {
-        order: 1;
+        order: 2;
     }
 
     article {
-        order: 2;
+        order: 1;
     }
 
     .aside-2 {
@@ -129,8 +129,6 @@ header, article, aside, footer {
     }
 
 
-
-
         .image {
             width: 45%;
             object-fit: contain;
@@ -144,28 +142,76 @@ header, article, aside, footer {
             margin-top: 0;
         }
     }
+    @media screen and (min-width:600px){
 
+      #pageBody{
+        display:flex;
+        flex-flow:row;
+      }
 
+      #content{
+        flex:3 auto;
+      }
 
-    @media screen and (min-width: 480px) {
-    	p{
-    		width: 95%;
-    		margin: 1em auto;
-    	}
-    }
+      #sidebar{
+        flex:1 auto;
+      }
 
-    @media screen and (min-width: 800px) {
-    	p{
+      #nav li{
+        border-right:none;
+      }
+
+      p{
     		width: 80%;
     		margin: 1.5em auto;
     	}
     }
 
-    @media screen and (min-width: 1000px) {
-    	p{
+    @media screen and (min-width:1000px){
+
+      .wrapper{
+        display: flex;
+        flex-flow:row;
+      }
+
+      #nav ul{
+        display:flex;
+        flex-flow:column;
+        margin: 0;
+      }
+
+      #nav li{
+        border-right:none;
+        border-bottom:1px solid rgba(255,255,255,.5);
+      }
+
+      #nav li:last-child {
+        border-bottom: none;
+      }
+
+      #content{
+        order:1;
+        margin:10px;
+      }
+
+      #sidebar{
+        order:3;
+        margin:10px;
+      }
+
+      #nav{
+        order:2;
+        margin:10px;
+        align-self: flex-start;
+      }
+
+      #footer{
+        order:4;
+      }
+
+      p{
     		width: 80%;
-    		max-width: 60em;
-    		margin: 1.5em auto;
+        margin: 1.5em auto;
     	}
 
     }
